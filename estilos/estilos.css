@@ -1,3 +1,22 @@
+/* Definição das variáveis globais no :root */
+:root {
+    /* Cores */
+    --primary-color: steelblue;
+    --text-color: #222;
+    --text-dark: #333;
+    --light-bg: #fff;
+    --aside-bg: #eee;
+    --shadow-color: gray;
+    --border-dark: #000;
+
+    /* Fontes e Tipografia */
+    --font-main: Arial, Helvetica, sans-serif;
+
+    /* Espaçamentos e Outros */
+    --padding-small: 10px;
+    --padding-medium: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,38 +24,39 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-main);
     line-height: 1.5;
-    color: #222;
-    background: #fff;
+    color: var(--text-color);
+    background: var(--light-bg);
     margin: 0;
-    
 }
 
 nav {
-    background-color:steelblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--padding-small);
 }
 
 nav a {
-    color: white;
-    padding: 10px;
+    color: var(--light-bg);
+    padding: var(--padding-small);
     display: block;
 }
 
 h1 {
-    color: steelblue;
+    color: var(--primary-color);
 }
 
-main img { 
+main img {
     width: 150px;
-     height: auto;
-     border: 1px solid steelblue;
-     padding:2px;
-     box-shadow: 0 0 30px gray;
+    height: auto;
+    border: 1px solid var(--primary-color);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--shadow-color);
 }
 
-p {padding: 0;}
+p {
+    padding: 0;
+}
 
 main {
     max-width: 840px;
@@ -44,11 +64,11 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
+    margin: var(--padding-medium);
     border: 1px solid rgba(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    padding: var(--padding-medium);
+    background-color: var(--aside-bg);
+    color: var(--text-dark);
     text-align: center;
 }
 
@@ -59,7 +79,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--border-dark);
     text-align: center;
 }
-
