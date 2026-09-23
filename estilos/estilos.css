@@ -17,6 +17,7 @@
     --padding-medium: 1rem;
 }
 
+/* Reset Global */
 * {
     margin: 0;
     padding: 0;
@@ -39,19 +40,24 @@ nav {
 nav a {
     color: var(--light-bg);
     padding: var(--padding-small);
-    display: block;
+    display: inline-block;
+    /* Permite que os links fiquem lado a lado no menu */
 }
 
 h1 {
     color: var(--primary-color);
 }
 
+/* Imagem de perfil com float à direita */
 main img {
     width: 150px;
     height: auto;
     border: 1px solid var(--primary-color);
     padding: 2px;
     box-shadow: 0 0 30px var(--shadow-color);
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 p {
@@ -62,14 +68,11 @@ main {
     max-width: 840px;
 }
 
+/* Regra do aside com posicionamento relativo para conter o título absoluto */
 aside {
     width: 20rem;
-    margin: var(--padding-medium);
-    border: 1px solid rgba(0 0 0 / 0.2);
-    padding: var(--padding-medium);
-    background-color: var(--aside-bg);
-    color: var(--text-dark);
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -77,8 +80,29 @@ aside img {
     height: auto;
 }
 
+/* Título em posição absoluta sobreposta à imagem dentro do aside */
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 50px;
+    /* Ajustado para alinhar bem na imagem */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fundo suave para dar leitura */
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-dark);
     text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgba(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
