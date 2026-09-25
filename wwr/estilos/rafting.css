@@ -54,11 +54,18 @@ article {
 }
 
 /* Removendo sublinhado dos links */
-nav a,
-footer a,
-.socialmedia a,
+nav a {
+    text-decoration: none;
+}
+
+/* Redes Sociais no Rodapé */
 .redes-sociais a {
     text-decoration: none;
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: auto;
 }
 
 /* Estilo da Seção Hero com Sobreposição */
@@ -100,18 +107,6 @@ footer a,
 }
 
 /* Redes Sociais no Rodapé */
-.redes-sociais img {
-    width: 30px;
-    height: auto;
-}
-
-/* Correção para os links das redes sociais */
-.socialmedia a,
-.redes-sociais a {
-    text-decoration: none;
-}
-
-.socialmedia img,
 .redes-sociais img {
     width: 30px;
     height: auto;
