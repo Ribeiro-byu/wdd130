@@ -104,3 +104,13 @@ footer a,
     width: 30px;
     height: auto;
 }
+
+/* Correção para os links das redes sociais */
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+}
