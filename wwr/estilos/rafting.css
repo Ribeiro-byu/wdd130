@@ -19,6 +19,8 @@
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
+    background-color: var(--cor-destaque2);
+    /* Uso da variável --cor-destaque2 */
 }
 
 /* Centralização do Container Principal */
@@ -27,6 +29,11 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+}
+
+header {
+    background-color: var(--cor-secundaria);
+    /* Uso da variável --cor-secundaria */
 }
 
 /* Títulos */
@@ -46,7 +53,15 @@ article {
     padding: 8px;
 }
 
-/* Estilo do Seção Hero com Sobreposição */
+/* Removendo sublinhado de todos os links de nav e footer */
+nav a,
+footer a,
+.socialmedia a,
+.redes-sociais a {
+    text-decoration: none;
+}
+
+/* Estilo da Seção Hero com Sobreposição */
 .hero {
     position: relative;
 }
@@ -85,10 +100,6 @@ article {
 }
 
 /* Redes Sociais no Rodapé */
-.redes-sociais a {
-    text-decoration: none;
-}
-
 .redes-sociais img {
     width: 30px;
     height: auto;
