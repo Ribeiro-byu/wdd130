@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 130 | Formulário HTML - Enquete do Usuário</title>
+  <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
 </head>
 <body>
 
@@ -17,12 +18,12 @@
       <fieldset>
         <legend>Informações de Contato</legend>
         
-        <div>
-          <label for="nome-completo">Nome Completo:</label>
-          <input type="text" id="nome-completo" name="nome-completo" required>
+        <div class="item-formulario coluna2">
+          <label for="nomecompleto">Nome Completo:</label>
+          <input type="text" id="nomecompleto" name="nomecompleto" required>
         </div>
 
-        <div>
+        <div class="item-formulario coluna2">
           <label for="emaildousuario">Email:</label>
           <input type="email" id="emaildousuario" name="emaildousuario" required>
         </div>
@@ -32,8 +33,8 @@
       <fieldset>
         <legend>Perguntas</legend>
 
-        <div>
-          <label for="navegador">Qual é o seu navegador de internet favorito?</label>
+        <div class="item-formulario coluna1">
+          <label for="navegador">Qual é o seu navegador favorito?</label>
           <select id="navegador" name="navegador">
             <option value="chrome">Chrome</option>
             <option value="firefox">Firefox</option>
@@ -43,25 +44,24 @@
           </select>
         </div>
 
-        <div>
+        <div class="item-formulario coluna1 pergunta-pet">
           <label for="pet">Você tem um animal de estimação?</label>
           <input type="checkbox" id="pet" name="pet">
         </div>
 
-        <div>
+        <div class="item-formulario-textarea">
           <label for="feedback">Liste os lugares onde você morou:</label>
-          <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Flórida,&#10;Amsterdam Holanda,&#10;Tibuktu Mali"></textarea>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="Stillwater Florida, Amsterdam Netherlands, Tibuktu Mali"></textarea>
         </div>
       </fieldset>
 
       <!-- Botão Enviar Enquete -->
-      <br>
-      <button type="submit">Enviar Enquete</button>
+      <button type="submit">Enviar Pesquisa</button>
     </form>
   </main>
 
   <footer>
-    <p>©2026 | Formulário HTML - Atividade de Enquete do Usuário | Eliza Ribeiro</p>
+    <p>©2026 | Formulário HTML - Atividade de Pesquisa de Usuário | Eliza Ribeiro</p>
   </footer>
 
 </body>
