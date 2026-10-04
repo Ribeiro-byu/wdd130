@@ -1,11 +1,12 @@
-/* Reset Universal */
+/* ==========================================
+   1. RESET E VARIÁVEIS (Globais)
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variáveis CSS */
 :root {
     --cor-primaria: #055a05;
     --cor-secundaria: #f4a261;
@@ -15,14 +16,15 @@
     --fonte-body: Arial, Helvetica, sans-serif;
 }
 
-/* Configuração do Corpo */
+/* ==========================================
+   2. ESTILOS BASE E TIPOGRAFIA
+   ========================================== */
 body {
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
     background-color: var(--cor-destaque2);
 }
 
-/* Centralização do Container Principal */
 header,
 main,
 footer {
@@ -30,7 +32,20 @@ footer {
     margin: 0 auto;
 }
 
-/* 1. Header usando CSS Grid */
+h1, h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+p, section, article {
+    margin: 16px 0;
+    padding: 8px;
+}
+
+/* ==========================================
+   3. CABEÇALHO E NAVEGAÇÃO
+   ========================================== */
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -44,7 +59,6 @@ header img {
     height: auto;
 }
 
-/* 2. Navegação usando CSS Flexbox */
 header nav ul {
     display: flex;
     justify-content: space-around;
@@ -60,23 +74,9 @@ header nav a {
     padding: 8px 12px;
 }
 
-/* Títulos */
-h1,
-h2 {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
-    text-align: center;
-}
-
-/* Espaçamentos Básicos */
-p,
-section,
-article {
-    margin: 16px 0;
-    padding: 8px;
-}
-
-/* Seção Hero */
+/* ==========================================
+   4. PÁGINA: SOBRE NÓS (sobre.html)
+   ========================================== */
 .hero {
     position: relative;
 }
@@ -114,7 +114,6 @@ article {
     border-radius: 4px;
 }
 
-/* 3. Galeria de 5 Imagens na Horizontal */
 .galeria {
     display: flex;
     justify-content: space-between;
@@ -141,7 +140,116 @@ article {
     color: var(--cor-destaque1);
 }
 
-/* 4. Rodapé Alinhado à Direita */
+/* ==========================================
+   5. PÁGINA: FALE CONOSCO (contato.html)
+   ========================================== */
+.informacoes-empresa {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.detalhes-empresa {
+    flex: 1;
+}
+
+.mapa-container {
+    flex: 1;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+}
+
+.grade-equipe {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.perfil-card {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.perfil-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo input,
+.campo textarea {
+    padding: 8px;
+    border: 1px solid var(--cor-destaque1);
+    border-radius: 4px;
+    font-family: var(--fonte-body);
+}
+
+.grupo-radio {
+    border: 1px solid var(--cor-destaque1);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.grupo-radio legend {
+    padding: 0 6px;
+    font-weight: bold;
+}
+
+.opcao-radio {
+    margin: 6px 0;
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-enviar {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: var(--cor-destaque1);
+}
+
+/* ==========================================
+   6. RODAPÉ
+   ========================================== */
 footer {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco - Rafting Aventuras | Eliza Ribeiro</title>
+    <meta name="description"
+      content="Entre em contato com a equipe da Rafting Aventuras. Tire suas dúvidas, faça reservas, dê sugestões ou assine nossa newsletter mensal.">
+    <meta name="author" content="Eliza Ribeiro">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo Rafting Aventuras" width="100">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Fale Conosco</h1>
+
+        <!-- Seção de Informações da Empresa e Mapa -->
+        <section class="informacoes-empresa">
+            <h2>Nossa Localização e Contato</h2>
+            <div class="detalhes-empresa">
+                <p><strong>Endereço:</strong> Av. das Corredeiras, 1500 - Vale da Aventura</p>
+                <p><strong>Telefone:</strong> (11) 99999-8888 / (11) 3333-4444</p>
+                <p><strong>E-mail:</strong> contato@raftingaventuras.com.br</p>
+            </div>
+
+            <!-- Google Maps sem estilo inline -->
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197583688126!2d-46.65867!3d-23.561414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzQxLjEiUyA0NsKwMzknMzEuMiJX!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" 
+                    width="400" 
+                    height="300" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa de localização da Rafting Aventuras">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Seção de Perfis dos Funcionários -->
+        <section class="equipe-perfis">
+            <h2>Nossa Equipe Pronta para Ajudar</h2>
+            <div class="grade-equipe">
+                <figure class="perfil-card">
+                    <img src="imagens/equipe1.jpg" alt="Foto de Carlos Silva, Guia Principal de Rafting">
+                    <figcaption>
+                        <strong>Carlos Silva</strong><br>
+                        <span>Guia Principal de Rafting</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="perfil-card">
+                    <img src="imagens/equipe2.jpg" alt="Foto de Mariana Souza, Gerente de Atendimento e Reservas">
+                    <figcaption>
+                        <strong>Mariana Souza</strong><br>
+                        <span>Gerente de Atendimento</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="perfil-card">
+                    <img src="imagens/equipe3.jpg" alt="Foto de Lucas Mendes, Coordenador de Segurança e Resgate">
+                    <figcaption>
+                        <strong>Lucas Mendes</strong><br>
+                        <span>Coordenador de Segurança</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Seção do Formulário de Contato -->
+        <section class="secao-formulario">
+            <h2>Envie uma Mensagem</h2>
+            <form action="#" method="post" class="formulario-contato">
+                <div class="campo">
+                    <label for="nome_usuario">Nome Completo:</label>
+                    <input type="text" id="nome_usuario" name="nome_usuario" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email_usuario">E-mail:</label>
+                    <input type="email" id="email_usuario" name="email_usuario" required>
+                </div>
+
+                <fieldset class="grupo-radio">
+                    <legend>Finalidade da Mensagem:</legend>
+                    
+                    <div class="opcao-radio">
+                        <input type="radio" id="consulta" name="finalidade" value="Consulta Geral" checked>
+                        <label for="consulta">Consulta Geral</label>
+                    </div>
+
+                    <div class="opcao-radio">
+                        <input type="radio" id="reserva" name="finalidade" value="Pergunta sobre Reserva">
+                        <label for="reserva">Pergunta sobre Reserva</label>
+                    </div>
+
+                    <div class="opcao-radio">
+                        <input type="radio" id="sugestao" name="finalidade" value="Sugestão de Site">
+                        <label for="sugestao">Sugestão de Site</label>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <div class="campo-checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Quero receber a newsletter mensal</label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Mensagem para a Equipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Rafting Aventuras | Eliza Ribeiro</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="imagens/facebook.png" alt="Ícone do Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="imagens/linkedin.png" alt="Ícone do LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="imagens/instagram.png" alt="Ícone do Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
