@@ -12,6 +12,11 @@
     --cor-secundaria: #f4a261;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
+    --cor-branca: #ffffff;
+    --cor-overlay-escura: rgba(38, 70, 83, 0.7);
+    --cor-overlay-clara: rgba(255, 255, 255, 0.9);
+    --cor-card-bg: rgba(255, 255, 255, 0.6);
+    --cor-form-bg: rgba(255, 255, 255, 0.8);
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
