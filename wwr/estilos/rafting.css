@@ -33,17 +33,21 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
 }
 
-p, section, article {
+p,
+section,
+article {
     margin: 16px 0;
     padding: 8px;
 }
@@ -261,16 +265,109 @@ footer {
     align-items: center;
     padding: 16px;
     background-color: var(--cor-secundaria);
+    clear: both;
+    /* Garante que o rodapé fica sempre no fundo em TODAS as páginas */
+    margin-top: 40px;
 }
 
-footer .redes-sociais {
+/* Suporta tanto class="social-links" quanto class="redes-sociais" */
+footer .social-links,
+footer .redes-sociais,
+footer .socialmedia {
     display: flex;
     gap: 12px;
     margin: 0;
     padding: 0;
 }
 
-footer .redes-sociais img {
+footer .social-links img,
+footer .redes-sociais img,
+footer .socialmedia img {
     width: 30px;
     height: auto;
+}
+
+/* ==========================================
+   7. PÁGINAS: INICIAL (index.html) E PASSEIOS (passeios.html)
+   ========================================== */
+
+/* Formulário da Newsletter e Botoes CTA */
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-form-bg);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.newsletter-form input {
+    padding: 8px;
+    border: 1px solid var(--cor-destaque1);
+    border-radius: 4px;
+}
+
+.newsletter-form button,
+.btn-cta {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 10px 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.cta-section,
+.cta-contato {
+    text-align: center;
+    background-color: var(--cor-card-bg);
+    border-radius: 8px;
+}
+
+/* CSS Grid para as Ofertas e Passeios (Multi-coluna) */
+.ofertas-grid,
+.passeios-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card-grid,
+.passeio-card {
+    background-color: var(--cor-card-bg);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+}
+
+.card-grid img,
+.passeio-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Tabela de Passeios */
+.tabela-passeios {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-branca);
+    margin-top: 16px;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    border: 1px solid var(--cor-destaque1);
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela-passeios th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
 }

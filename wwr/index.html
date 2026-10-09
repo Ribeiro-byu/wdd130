@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Rafting Aventuras</title>
+    <meta name="description"
+      content="Bem-vindo ao Rafting Aventuras! Viva as melhores experiências de rafting, navegue por corredeiras e descubra a natureza.">
+    <meta name="author" content="Eliza Ribeiro">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logotipo Rafting Aventuras">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Banner Principal (Hero) com Imagem e Mensagem sobreposta -->
+        <div class="hero">
+            <img src="imagens/hero-rafting.jpg" alt="Rafting nas corredeiras" class="hero-img">
+            <h1 class="hero-title">Sinta a Adrenalina nas Corredeiras!</h1>
+        </div>
+
+        <!-- Formulário de Inscrição da Newsletter -->
+        <section class="newsletter-section">
+            <h2>Inscreva-se na nossa Newsletter</h2>
+            <p>Receba ofertas exclusivas, promoções e dicas de aventura diretamente no seu e-mail.
+            </p>
+            <form action="#" method="post" class="newsletter-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required
+                  placeholder="seuemail@exemplo.com">
+
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+
+        <!-- Chamada para Ação (CTA) para a página de Passeios -->
+        <section class="cta-section">
+            <h2>Pronto para a sua próxima aventura?</h2>
+            <p>Confira nossos pacotes especiais para todos os níveis de experiência.</p>
+            <a href="passeios.html" class="btn-cta">Ver Todos os Passeios</a>
+        </section>
+
+        <!-- CSS Grid com Imagens e Conteúdo -->
+        <section class="ofertas-grid">
+            <div class="card-grid">
+                <img src="imagens/oferta1.jpg" alt="Equipamento de segurança de rafting">
+                <h3>Segurança em Primeiro Lugar</h3>
+                <p>Nossa equipe conta com guias certificados internacionalmente e equipamentos de
+                    última geração para garantir uma aventura segura e inesquecível.</p>
+            </div>
+            <div class="card-grid">
+                <img src="imagens/oferta2.jpg" alt="Grupo fazendo rafting em um rio">
+                <h3>Aventuras para Toda a Família</h3>
+                <p>Oferecemos trajetos desde águas calmas até corredeiras mais desafiadoras. Temos o
+                    passeio ideal para amigos, famílias e aventureiros solo.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rafting Aventuras - Eliza Ribeiro</p>
+        <p><a href="https://wireframe.cc" target="_blank">Wireframe do Projeto</a></p>
+        <div class="social-links">
+            <a href="https://facebook.com"><img src="imagens/facebook.png" alt="Facebook"></a>
+            <a href="https://instagram.com"><img src="imagens/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="imagens/youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
